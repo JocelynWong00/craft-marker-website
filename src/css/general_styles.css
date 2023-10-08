@@ -44,3 +44,14 @@ grid-template-rows: auto 1fr;
 .menu-button { font-size: 20px;
     color: white; background-color: #379EA8; padding: 2px 20px; border-style: solid; border-radius: 5px; border-color: white;
     }
+
+.home_splash{
+    width:100%;
+    height:auto;
+    object-fit: cover;
+}
+
+figcaption{
+    color: grey;
+    font-weight: 100;;
+}
