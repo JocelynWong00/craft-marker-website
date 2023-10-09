@@ -58,25 +58,28 @@
 
 
 
-#subscribe-form > label{
+#about-item-3 > label{
     display: block;
+    padding: 5px;
     font-size: 0.8em;
     margin-bottom: 0.5em;
 }
 
-#subscribe-form > input{
+#about-item-3 > input{
     display: block;
     width:80%;
     margin-bottom: 1rem;
-    padding: .375rem .75rem;
+    padding: .75rem .75rem;
     font-size: 0.8rem;
     line-height: 1.5;
     color: #495057;
 }
 
-#button-subscribe{
+.button-subscribe{
+    
+    margin: 10px auto 10px auto;
     display: block;
-    background-color: grey;
+    background-color: rgb(208, 234, 250);
     color: black;
     padding: 0.375rem 0.75rem;
 
