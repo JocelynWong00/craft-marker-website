@@ -1,7 +1,10 @@
-
+/* html, body {
+    background-color: rgb(8, 76, 111);
+} */
 .about-container{ 
-    margin: 0 auto;
+    margin: auto;
     display: grid;
+
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, auto); 
     }
@@ -12,6 +15,10 @@
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 5;
+    background-color: white;
+    width:75%;
+    text-align: center;
+    border-radius: 10px;
 }
 
 #about-item-2{
@@ -26,6 +33,10 @@
     grid-column-end:4;
     grid-row-start: 5;
     grid-row-end: 7;
+    background-color: azure;
+    width: 75%;
+    border-radius: 10px;
+    margin-top: 5%;
 }
 
 #about-item-4{
@@ -33,4 +44,40 @@
     grid-column-end: 4;
     grid-row-start: 7;
     grid-row-end: 9;
+}
+
+#current_temperature, #current_windspeed{
+    font-size: 2.5rem;
+    color:rgb(25, 72, 243);
+}
+
+.section-icon>img{
+    width: 50%;
+    height: auto;
+}
+
+
+
+#subscribe-form > label{
+    display: block;
+    font-size: 0.8em;
+    margin-bottom: 0.5em;
+}
+
+#subscribe-form > input{
+    display: block;
+    width:80%;
+    margin-bottom: 1rem;
+    padding: .375rem .75rem;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    color: #495057;
+}
+
+#button-subscribe{
+    display: block;
+    background-color: grey;
+    color: black;
+    padding: 0.375rem 0.75rem;
+
 }

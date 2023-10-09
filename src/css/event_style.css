@@ -1,0 +1,78 @@
+.event-container{ 
+    width: 80vw;
+    margin: 10% 10%; 
+    /* 为什么这里删除之后就不对齐了？width vw的原理 */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto; 
+    }
+/* 这里创建一个表单作为一个div 创建项目用 */
+#submit-form{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: rgb(227, 227, 227);
+    width:75%;
+    text-align: center;
+    border-radius: 10px;
+}
+/*这边可以放一些图片信息等等 */
+#event-item-2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#event-form{
+    width:90%;
+    padding: 5%;
+}
+#submit-form{
+    width:80%;
+    padding:5%;
+    margin: 0 auto;
+
+}
+
+#submit-form > label{
+    padding-left: 10px;
+    display: block;
+    font-size: 1.25rem;
+    text-align: left;
+    margin-bottom: 0.5rem;
+}
+
+#submit-form > input{
+    display: block;
+    width:80%;
+    margin-bottom: 1rem;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: azure;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+
+#submit-form >input:focus{
+    border-color: aquamarine;
+    outline: 0;
+    box-shadow: 0 0 0 .2rem rgba(0, 123, 255, 25);
+}
+
+#submit-button.disabled{
+    background-color: grey;
+    color: white;
+    border: none;
+    padding: 10px, 20px;
+}
+
+#submit-button.enabled{
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}

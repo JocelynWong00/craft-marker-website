@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+ <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wellhub</title>
+    <link rel="stylesheet" href="css/general_styles.css">
+    <link rel="stylesheet" href="css/event_style.css">
+ </head>
+
+ <body>
+    <div class="grid-container">
+       <div class="brand">WellHub</div>
+       <div class="page-links">
+               <a href="index.html"><button class="menu-button">Home</button></a>
+               <a href="gallery.html"><button class="menu-button">forum</button></a>
+               <a href="about.html"><button class="menu-button">About US</button></a>
+       </div>
+    <div class="event-container">
+        <div id="submit-form">
+            <label for="name" class="event-form">Name</label>
+            <input class="event-form" type="text" id="name" name="name" placeholder="Enter your event name" required>
+            <label class="event-form" for="location">location</label>
+            <input class="event-form" type="text" id="location" name="location" placeholder="Enter your event location" required>
+            <label class="event-form" for="organiser">organiser</label>
+            <input class="event-form" type="text" id="organiser" name="organiser" placeholder="Enter organiser name" required>
+            <label for="event_type" class="event-form">event_type</label>
+            <input class="event-form" type="text" id="event_type" name="type event" placeholder="Enter your event type" required>
+            <label for="description" class="event-form">description</label>
+            <input class="event-form" type="text" id="description" name="description" placeholder="Enter your description" required>
+            <label for="datetime" class="event-form">datetime</label>
+            <input class="event-form" type="date" id="datetime" name="datetime" placeholder="Enter your datetime" required>
+            <label for="photo" class="event-form">photo</label>
+            <input class="event-form" type="file" id="photo" name="photo" placeholder="upload your photo" optional>
+            <label for="webistecode" class="event-form">webistecode</label>
+            <input class="event-form" type="text" id="webistecode" name="webistecode" placeholder="Enter your webistecode" required>
+            <input type="submit" value="Create A Event" id="submit-button" disabled>
+       </div>
+   </div>
+   
+   <script src="js/site_interactions.js"></script>
+    </body>
+   </html>
