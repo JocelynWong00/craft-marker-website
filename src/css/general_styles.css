@@ -5,11 +5,12 @@ html,body {
     height:100%;
     width: 100%;
    }
-h1 {
-    color: rgb(18, 22, 221);
+h1,h2{
+    color: rgb(7, 7, 7);
    }
+
 p{
-    color:#669af4;
+    color:#060606;
     text-align:left;
     font-size: 15px;
    }
@@ -17,7 +18,7 @@ p{
 .grid-container { 
 display: grid;
 grid-template-columns: auto auto auto auto;
-grid-template-rows: auto 1fr; 
+grid-template-rows: auto; 
 }
 
 .brand {
@@ -37,16 +38,25 @@ grid-template-rows: auto 1fr;
     padding: 10px;
     }
 
-.title-bg {
+/* .title-bg {
     background-color: yellow;
     position: absolute;
     
-} 
-    
-.main{
+}  */
+.welcome-band{
     grid-column:1/-1;
     grid-row:2;
-    width:75vw;
+    margin:0 auto;
+    background-color:white;
+    text-align: center;
+    /*textalign和整体的这个element */
+}
+.welcome-band>p{
+    padding:auto 10px;
+}
+
+.main{
+    /* width:75vw; */
     margin:0 auto;
 }
 .menu-button { font-size: 20px;
@@ -64,20 +74,71 @@ figcaption{
     font-weight: 100;;
 }
 /* 添加搜索板块，点进去图片可以跳转到搜索页面 */
-.container-1 {
-    grid-column:  ;
-    display: flex;
-    align-items: center; 
-    justify-content: space-between; 
-    width: 100%; 
-    margin: 0 auto;
-}
-/* 搜索板块左边的文字 */
-.mainpage-page-text{
 
 
-}
 img {
     max-width: 100%; /* 图片不超出容器宽度 */
     height: auto; /* 高度自动调整以保持纵横比 */
 }
+
+#create-page-pic{
+    width:100%;
+    height: auto;
+}
+
+.main-page-container{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 5%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows:auto auto auto; 
+    width:75vw;
+}
+#main-page-text1{
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row:1;
+    text-align: left;
+    /* 这里用span还是column start? */
+}
+
+#main-page-text2{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row:2;
+
+    padding-right: 5%;
+
+    text-align: left;
+    /* 这里用span还是column start? */
+}
+
+.main-page-button{
+    width: 50%;
+
+    text-align: center;
+}
+
+.main-page-image{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start:1;
+    grid-row-end: 4;
+    /* 这里用span还是column start? */
+}
+
+.bg-white {
+    background-color: white !important;
+}
+
+.row {
+    width: 75vw;
+    margin: 0 auto;
+}
+
+/* .w-100 {
+    width: 100%;
+} */

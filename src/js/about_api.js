@@ -45,4 +45,51 @@ const handlerInputchange =() =>{
         button.disabled=true;
     }
 }
+
+const handleSubmit=(event) =>{
+    event.preventDefault();
+
+    let firstname=document.getElementById('firstName').value;
+    // 加不加value得到的是什么，这个val封装的是什么内容
+    let suburb=document.getElementById('suburb').value;
+    let email=document.getElementById('email').value;
+
+    let responseMessage=document.getElementById('responseMessage');
+
+    let payload={
+        subscriber_name:firstname,
+        subscriber_suburb: suburb,
+        subsribe_email:email
+    }
+
+    const url='https://damp-castle-86239-1b70ee448fbd.herokuapp.com/decoapi/api/';
+    const method='POST';
+    const headers={
+        'Content-Type': 'application/json',
+    }
+
+    fetch(url,{
+        method:method,
+        headers: headers,
+        body: JSON.stringify(payload)
+    })
+    .then((response)=>response.text())
+    .then((data)=>{
+        if(data=='added'){
+            responseMessage.textContent='Subscription successful. Thank you for subscribing!';
+        }else if(data=='exists'){
+            responseMessage.textContent='This email address has already been used to subscribe.';
+        }else if(data=='error'){
+            responseMessage.textContent='An error occurred with the API. Please try again later';
+        }
+    })
+    .catch((error)=>{
+        console.error('Error:', error);
+        responseMessage.textContent='An unexpected error occurred. Please try again later'
+    }
+
+    )
+}
+
 subscribeForm.addEventListener('input', handlerInputchange);
+subscribeForm.addEventListener('submit', handleSubmit)

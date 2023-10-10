@@ -8,40 +8,62 @@
  </head>
 
  <body>
+<!-- 页面上方的布局 -->
  <div class="grid-container">
     <div class="brand">WellHub</div>
+
     <div class="page-links">
             <a href="index.html"><button class="menu-button">Home</button></a>
             <a href="gallery.html"><button class="menu-button">forum</button></a>
             <a href="about.html"><button class="menu-button">About US</button></a>
     </div>
-    <div class="main">
-        <div class="title-bg">
-            <h1>Welcome to Wellhub</h1>
-            <p>Are you ready to embark on a journey towards a healthier, happier you? Look no further! Wellhub is your ultimate destination for all things related to human wellness right in your local community.</p>
-        </div>
-        <figure>
-            <img class="create-page-pic" alt="New activities everyday, explore here. Learn more" src="images/createpage.html">
-            <figcaption>Photo taken by unsplash.com</figcaption>
-        </figure>
-        
-        
-        <h2>Discover Your Path to Wellness:</h2>
-        <div class="container-1">
-            <div class="main-page-text">
-                <p>At Wellhub, we believe that achieving wellness is a holistic endeavor, encompassing physical fitness, mental well-being, and a balanced lifestyle. Our mission is to empower you with the information and resources you need to enhance your overall wellness.</p>
-            </div>
-                <div class="main-page-image">
-                    <img src="images/pic1.html" alt="a woman doing yoga">
-                </div>
-        </div>
-        
-        <p>Local Activities, Tailored to You:
-
-        Our website serves as a comprehensive hub for all the wellness-related activities happening right in your neighborhood. Whether you're interested in yoga classes, meditation sessions, fitness boot camps, healthy cooking workshops, or mindfulness retreats, we've got you covered. We curate and provide up-to-date information on a wide range of local events and activities that align with your wellness goals.</p>
-        <button id="discount-code">Give me a discount code!</button>
-        <p id="your-discount-code">Click the button avove to reveal your discount code</p>
+    <!-- <div class="title-bg"> -->
+    <div class="welcome-band">
+        <h1>Welcome to Wellhub</h1>
+        <p>Are you ready to embark on a journey towards a healthier, happier you? Look no further! Wellhub is your ultimate destination for all things related to human wellness right in your local community.</p>
     </div>
+    <!-- <figure>
+        <img id="create-page-pic" alt="New activities everyday, explore here. Learn more" src="images/createpage.html">
+        <figcaption>Photo taken by unsplash.com</figcaption>
+    </figure>   
+    <p>Local Activities, Tailored to You:
+    Our website serves as a comprehensive hub for all the wellness-related activities happening right in your neighborhood. Whether you're interested in yoga classes, meditation sessions, fitness boot camps, healthy cooking workshops, or mindfulness retreats, we've got you covered. We curate and provide up-to-date information on a wide range of local events and activities that align with your wellness goals.</p> -->
+    <!-- <button id="discount-code">Give me a discount code!</button>
+    <p id="your-discount-code">Click the button avove to reveal your discount code</p> -->
+</div>
+
+<!-- 两个主要板块+链接 页面应该是分布左右 显得更有设计感-->
+<div class="main">
+    
+    <div class="main-page-container row">
+        <div id="main-page-text1">
+            <h2>Discover Your Path to Wellness</h2>
+        </div>
+        <div id="main-page-text2">
+            <p>At Wellhub, we believe that achieving wellness is a holistic endeavor, encompassing physical fitness, mental well-being, and a balanced lifestyle. Our mission is to empower you with the information and resources you need to enhance your overall wellness.</p>
+        </div>
+        <div class="main-page-image">
+            <img src="images/pic1.html" alt="a woman doing yoga">
+        </div>
+        <!-- <div class="w-100"> -->
+        <button class="main-page-button">Explore here</button>
+        <!-- </div> -->
+    </div>
+    <div class="bg-white">
+        <div class="main-page-container row">
+            <div id="main-page-text1">
+                <h2>Join our community</h2>
+            </div>
+            <div id="main-page-text2">
+                <p>We are thrilled to invite you to join our Wellness Website, a community dedicated to enhancing quality of life and well-being. We believe that health is our most precious asset, and sharing and learning about health and happiness with others makes us stronger and happier.</p>
+            </div>
+            <div class="main-page-image">
+                <img src="images/forum.html" alt="a woman doing yoga">
+            </div>
+            <button class="main-page-button">Join here</button>
+        </div>
+    </div>
+    
 </div>
 
 <script src="js/site_interactions.js"></script>
