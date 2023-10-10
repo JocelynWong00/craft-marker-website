@@ -10,6 +10,7 @@ const queryParams={
 const queryString =new URLSearchParams(queryParams).toString();
 
 const urlWithParams =baseUrl+"?"+queryString;
+
 const requestoptions={
     method: 'GET',
     redirect: 'follow'
@@ -26,3 +27,22 @@ fetch(urlWithParams, requestoptions)
         windspeed_element.innerText=weather.windspeed+"kph";
     })
     .catch(error=>console.log('error',error));
+
+
+const subscribeForm=document.getElementById('subscribe-form');
+
+const handlerInputchange =() =>{
+    let firstname = document.getElementById('firstName');
+    let suburb = document.getElementById('suburb')
+    let email = document.getElementById('email');
+    let button=document.getElementById('subscribe-submit-button');
+
+    if(firstname.value && suburb.value && email.value && email.validity.valid){
+        button.classList.add('enabled');
+        button.disabled=false;
+    }else{
+        button.classList.remove('enabled');
+        button.disabled=true;
+    }
+}
+subscribeForm.addEventListener('input', handlerInputchange);
