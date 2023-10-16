@@ -56,6 +56,8 @@ const handleSubmit=(event) =>{
 
     let responseMessage=document.getElementById('responseMessage');
 
+    responseMessage.textContent='Sending your requese... please wait';
+
     let payload={
         subscriber_name:firstname,
         subscriber_suburb: suburb,
