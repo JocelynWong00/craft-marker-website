@@ -16,57 +16,66 @@
                 <a href="gallery.html"><button class="menu-button">Forum</button></a>
                 <a href="about.html"><button class="menu-button">About US</button></a>
         </div>
-        <div class="main">
-            <h1>About the WellHub</h1>
-            <div class="about-container">
-                <div id="about-item-1">
-                    <figure class="section-icon">
-                        <img src="images/weather.png" alt="Weather icon">
-                    </figure>
-                    <h4>Current Weather</h4>
-                    <p>Temperature</p>
-                    <p id="current_temperature">??</p>
-                    <p>Wind Speed</p>
-                    <p id="current_windspeed">??</p>
-                </div>
+    </div>
+    
+    <div class="main">
+        <h1 id="page-heading">About us</h1>
+        <div id="about-page-image">
+            <img src="images/weightlifting.html" style="width:100%; height: 400px; object-fit:cover" alt="a woman doing yoga">
+        </div>
+        <div class="about-container">
+            <!-- <div id="about-item-1">
+                <figure class="section-icon">
+                    <img src="images/weather.png" alt="Weather icon">
+                </figure>
+                <h4>Current Weather</h4>
+                <p>Temperature</p>
+                <p id="current_temperature">??</p>
+                <p>Wind Speed</p>
+                <p id="current_windspeed">??</p>
+            </div> -->
         
-                <div id="about-item-2">
-                    <h3>Organized by family, friend & Community</h3>
-                    <p>The bayside Heights </p>
-                    <h3>Who We are</h3>
-                    <p>We are passionate group for providing users latest and entertainment wellness activities</p>
-                    <h3>Our Mission</h3>
-                    <p>cheapest price, best activity in your comm</p>
-                </div>
-        
-                <div id="about-item-3">
-                    <form id="subsribe-form">
-                        <h5>Subsribe to our newsletters!</h5>
-                        <label for="firstname" >First Name</label>
-                        <input type="text" id="firstname" name="first name" placeholder="Enter your first name" required>
-
-                        <label for="suburb" >Suburb</label>
-                        <input type="text" id="suburb" name="suburb" placeholder="Enter your suburb" required>
-
-                        <label for="email" >Email:</label>
-                        <input type="email" id="email" name="email" placeholder="Enter your emial address" required>
-
-                        <input type="submit" id="subsribe-submit-button" value="Subscribe" >
-                    </form>
-
-                    <div id="responseMessage"></div>
-
-                </div>
-        
-                <div id="about-item-4">
-                    
-                </div>
-        
+            <div id="about-item-1">
+                <h3>Welcome to WellHub!</h3>
+                <p>At WellHub, we are passionate about your well-being. We are a dedicated online platform that serves as your one-stop destination for a wealth of information on wellness, exercise, and a holistic approach to living your best life.</p>
+                <h3>Our Mission</h3>
+                <p>Our mission is to empower and inspire individuals to take charge of their health and fitness journey. We believe that everyone deserves access to reliable, evidence-based information to make informed decisions about their well-being. Whether you're just starting your wellness adventure or you're a seasoned health enthusiast, WellHub is here to support you every step of the way.</p>
+                <h3>What We Offer</h3>
+                <p>Wellness Insights: Stay updated with the latest trends, research, and insights in the world of wellness. From nutrition tips to stress management techniques, we've got you covered.</p>
+                <p>Fitness Guidance: Explore a diverse range of exercise routines, workout plans, and tips from experienced trainers and fitness experts.</p>
+                <p>Mind and Body: Discover the connection between mental and physical health through our articles on mindfulness, meditation, and holistic well-being.</p>
+                <p>Healthy Lifestyle: Learn about creating a balanced and sustainable lifestyle that promotes health and happiness</p>
             </div>
+    
+            <div id="about-item-2">
+                <form id="subscribe-form">
+                    <h5>Subsribe to our newsletters!</h5>
+                    <label for="firstname" >First Name</label>
+                    <input type="text" id="firstname" name="first name" placeholder="Enter your first name" required>
+
+                    <label for="suburb" >Suburb</label>
+                    <input type="text" id="suburb" name="suburb" placeholder="Enter your suburb" required>
+
+                    <label for="email" >Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your emial address" required>
+
+                    <input type="submit" id="subsribe-submit-button" value="Subscribe" >
+                    <div id="subscribe-image">
+                        <img src="images/weather.png" style="object-fit:cover" alt="a woman doing yoga">
+                    </div>
+                </form>
+
+                <div id="responseMessage"></div>
+
+            </div>
+        
+            <!-- <div id="about-item-4">
+                    
+            </div> -->
+        
         </div>
     </div>
 
-    
     <script src="js/about_api.js"></script>
 </body>
 </html>
