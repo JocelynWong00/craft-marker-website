@@ -3,6 +3,8 @@ body {
     background-color: #f4f4f4;
 }
 .filter-session{
+    margin-left: 10%;
+    margin-right:10%;
     display: grid;
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: 1;
@@ -13,8 +15,9 @@ body {
     grid-column-end:3 ;
 }
 .image-container>img{
-    max-width: 100px;
+    /* max-width: 100px; */
     height: auto;
+    margin:10%;
 }
 
 .filter-container {

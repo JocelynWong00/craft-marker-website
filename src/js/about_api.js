@@ -37,13 +37,13 @@ const handlerInputchange =() =>{
     let email = document.getElementById('email');
     let button=document.getElementById('subscribe-submit-button');
 
-    if(firstname.value && suburb.value && email.value && email.validity.valid){
-        button.classList.add('enabled');
-        button.disabled=false;
-    }else{
-        button.classList.remove('enabled');
-        button.disabled=true;
-    }
+    // if(firstname.value && suburb.value && email.value && email.validity.valid){
+    //     button.classList.add('enabled');
+    //     button.disabled=false;
+    // }else{
+    //     button.classList.remove('enabled');
+    //     button.disabled=true;
+    // }
 }
 
 const handleSubmit=(event) =>{

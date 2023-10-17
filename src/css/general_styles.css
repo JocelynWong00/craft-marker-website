@@ -122,17 +122,19 @@ img {
 }
 
 .main-page-button{
-    width: 50%;
+    width: 70%;
+    height:80px;
     text-decoration: none;
     text-align: center;
+    font-size:1.25rem;
 }
+
 
 .main-page-image{
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start:1;
     grid-row-end: 4;
-    /* 这里用span还是column start? */
 }
 
 .bg-white {
@@ -144,10 +146,6 @@ img {
     margin: 0 auto;
 }
 
-/* .w-100 {
-    width: 100%;
-} */
-
 .hover-underline:hover {
     text-decoration: underline; 
 }
@@ -156,30 +154,48 @@ img {
     padding-left: 10%;
     text-align: center;
     background-color: white;
-    display: flex;
+    /* display: block; */
     align-items: center;
     margin: 3% 10% 3% 10%;
-    padding: 37px;
+    padding: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
+
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto; 
+
 }
 
 .events img {
-    width: 100px; /* 调整图片的宽度，根据需要进行修改 */
-    height: auto;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-template-rows: 1/span 1;
+    width: 100px ;
+    height: 100px;
+    object-fit:cover;
     margin-right: 10px;
     border-radius: 5px;
+    justify-content: center;
+    align-items: center;
 }
 
 .events h3 {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    text-align: left;
     display: block;
     font-size: 1.2rem;
     margin: 0;
+    padding-left:5%;
 }
 
 .events p {
+    grid-column-start: 2;
+    grid-column-end: 5;
     display: block;
     font-size: 1rem;
+    padding-left:5%;
 }
 
 #session-title{
