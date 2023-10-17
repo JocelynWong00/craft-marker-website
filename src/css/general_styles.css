@@ -12,7 +12,7 @@ h1,h2{
 p{
     color:#060606;
     text-align:left;
-    font-size: 15px;
+    font-size: 1.1rem;
    }
 
 .grid-container { 
@@ -44,15 +44,17 @@ grid-template-rows: auto;
     
 }  */
 .welcome-band{
-    grid-column:1/-1;
-    grid-row:2;
-    margin:0 auto;
+    /* margin:0 10% auto 10%; */
     background-color:white;
     text-align: center;
     /*textalign和整体的这个element */
 }
+.welcome-band>h1{
+    padding-top: 3%;
+}
 .welcome-band>p{
-    padding:auto 10px;
+    margin:auto 10% auto 10%;
+    padding-bottom: 2%;
 }
 
 .main{
@@ -146,8 +148,43 @@ img {
     width: 100%;
 } */
 
-
-
 .hover-underline:hover {
     text-decoration: underline; 
+}
+
+.events {
+    padding-left: 10%;
+    text-align: center;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    margin: 3% 10% 3% 10%;
+    padding: 37px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.events img {
+    width: 100px; /* 调整图片的宽度，根据需要进行修改 */
+    height: auto;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.events h3 {
+    display: block;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.events p {
+    display: block;
+    font-size: 1rem;
+}
+
+#session-title{
+    margin-top: 2%;
+    margin-bottom: 2%; 
+    font-size: 1.5rem; 
+    margin-left: 10%;
 }
