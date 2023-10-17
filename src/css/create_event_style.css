@@ -1,13 +1,12 @@
-.event-container{ 
+/* .event-container{ 
     width: 80vw;
     margin: 5% 10%; 
-    /* 为什么这里删除之后就不对齐了？width vw的原理 */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto; 
-    }
-/* 这里创建一个表单作为一个div 创建项目用 */
-#submit-form{
+    } */
+
+/* #submit-form{
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 1;
@@ -16,9 +15,9 @@
     width:75%;
     text-align: center;
     border-radius: 10px;
-}
-/*这边可以放一些图片信息等等 */
+}  */
 
+/* 
 .event-form{
     width:90%;
 }
@@ -27,8 +26,8 @@
     padding:5%;
     margin: 0 auto;
 
-}
-
+} */
+/* 
 #submit-form > label{
     padding-left: 10px;
     display: block;
@@ -75,4 +74,98 @@
     width:100vw;
     height: auto;
 
+}  */ 
+html,body{
+    background-color: white !important;
+}
+.event-page-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1;
+}
+
+label{
+    color:rgb(8, 8, 8);
+}
+
+.form-group{
+    margin-bottom: 1rem;
+}
+
+.form-group label{
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group textarea{
+    width:85%;
+    padding:0.5rem;
+    border:1px solid;
+    border-radius:4px;
+    font-size:1rem;
+}
+
+.form-check{
+    margin-bottom:0.25rem;
+}
+
+.form-check-label{
+    display:inline !important;
+    margin-left: 0.25rem;
+}
+#eventText{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+#eventForm{
+    margin-right: 10%;
+    padding: 5% 0 5% 5%;
+    background-color: rgb(196, 233, 251);
+    margin-left: 10%;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    border-radius: 8px;
+}
+
+.btn{
+    padding:1vh 1vw;
+    cursor:pointer;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+    font-size: 1em;
+}
+
+.btn-primary{
+    margin-top: 5%;
+    background-color: #0142f3;
+    color:white;
+}
+
+.btn-primary:hover{
+    background-color: white;
+    color: rgb(133, 24, 24);
+}
+
+#photo-file-input-label{
+    width:50%;
+    padding:1vw;
+    background-color: #0142f3;
+    color:white;
+    cursor:pointer;
+    border:grey;
+    border-style:solid;
+    border-radius:4px;
+    transition:background-color 0.2s ease;
+}
+
+#photo-file-input-label:hover{
+    background-color:rgb(225, 225, 225);
+    color:rgb(170, 29, 29);
+}
+
+#photo-file-input{
+    display:none;
 }

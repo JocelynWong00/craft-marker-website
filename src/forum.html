@@ -5,46 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Wellhub</title>
     <link rel="stylesheet" href="css/general_styles.css">
-    <link rel="stylesheet" href="css/gallery_style.css">
+
  </head>
 
  <body>
+ <!-- logo and navigation bar -->
  <div class="grid-container">
     <div class="brand">WellHub</div>
     <div class="page-links">
             <a href="index.html"><button class="menu-button">Home</button></a>
-            <a href="gallery.html"><button class="menu-button">forum</button></a>
-            <a href="about.html"><button class="menu-button">About US</button></a>
-    </div>
-    <div class="main">
-        <h1>Searching Here</h1>
+            <a href="gallery.html"><button class="menu-button">Forum</button></a>
+            <a href="about.html"><button class="menu-button">About us</button></a>
+            <a href="create_event.html"><button class="menu-button">Create your events</button></a>
     </div>
 </div>
-<div class="gallery-container">
-        <figure class="gallery-item" id="gallery-item-1">
-            <img src="images/pic1.html" class="gallery-img" alt="a pic of a woman doing yoga">
-        </figure>
-        <figure class="gallery-item" id="gallery-item-2">
-            <img src="images/pic2.html" class="gallery-img" alt="a pic of a woman doing yoga">
-        </figure>
-        <figure class="gallery-item" id="gallery-item-3">
-            <img src="images/pic3.html" class="gallery-img" alt="a pic of a woman doing yoga">
-        </figure>
-        <figure class="gallery-item" id="gallery-item-4">
-            <img src="images/pic4.html" class="gallery-img" alt="a pic of a woman doing yoga">
-        </figure>
-        <figure class="gallery-item" id="gallery-item-5">
-            <img src="images/pic5.html" class="gallery-img" alt="a pic of a woman doing yoga">
-        </figure>
-        <figure class="gallery-item" id="gallery-item-6">
-            <img src="images/pic6.html" class="gallery-img" alt="a pic of a woman doing yoga">
-        </figure>
-        <figure class="gallery-item" id="gallery-item-7">
-            <img src="images/pic7.html" class="gallery-img" alt="a pic of a woman doing yoga">
-        </figure>
-        <figure class="gallery-item" id="gallery-item-8">
-            <img src="images/pic8.html" class="gallery-img" alt="a pic of a woman doing yoga">
-        </figure>
+<!-- post area -->
+<div class="popular-upcoming-events">
+    <h2 id="session-title">Wellness Community</h2>
+    <div class="events">
+        <div>
+            <img src="images/dog.html" alt="some dogs sitting together">
+        </div>
+        <div>
+            <h3>Petting dogs</h3>
+            
+            <p>Come and join us to pet cute dogs! It's a simple and joyful activity...</p>
+        </div>
+    </div>
+
+    <div class="events">
+        <div>
+            <img src="images/dog.html" alt="some dogs sitting together">
+        </div>
+        <div>
+            <h3>Petting dogs events group chat</h3>
+            
+            <p>Anyone who is interested in petting evnets can join our whatsapp link</p>
+        </div>
+    </div>
+
+    <div class="events">
+        <div>
+            <img src="images/dog.html" alt="some dogs sitting together">
+        </div>
+        <div>
+            <h3>Petting dogs</h3>
+            
+            <p>Come and join us to pet cute dogs! It's a simple and joyful activity...</p>
+        </div>
+    </div>
+
+    <div class="events">
+        <div>
+            <img src="images/dog.html" alt="some dogs sitting together">
+        </div>
+        <div>
+            <h3>Petting dogs</h3>
+            
+            <p>Come and join us to pet cute dogs! It's a simple and joyful activity...</p>
+        </div>
+    </div>
+
+    <div class="events">
+        <div>
+            <img src="images/dog.html" alt="some dogs sitting together">
+        </div>
+        <div>
+            <h3>Petting dogs</h3>
+            
+            <p>Come and join us to pet cute dogs! It's a simple and joyful activity...</p>
+        </div>
+    </div>
+</div>
+<!-- a area that you can send your post -->
+<div id="send-posts">
+    <form id="forum-post-form">
+        <h5>Write your post here</h5>
+        <label for="firstname" >First Name</label>
+        <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+
+        <label for="suburb" >Suburb</label>
+        <input type="text" id="suburb" name="suburb" placeholder="Enter your suburb" required>
+
+        <label for="email" >Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your emial address" required>
+
+        <input type="submit" id="subsribe-submit-button" value="Subscribe" >
+        <div id="subscribe-image">
+            <img src="images/weather.png" style="object-fit:cover" alt="a woman doing yoga">
+        </div>
+    </form>
+
+    <div id="responseMessage"></div>
 
 </div>
 

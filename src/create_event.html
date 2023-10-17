@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Wellhub</title>
     <link rel="stylesheet" href="css/general_styles.css">
-    <link rel="stylesheet" href="css/event_style.css">
+    <link rel="stylesheet" href="css/create_event_style.css">
  </head>
 
  <body>
+   <!-- the navigation area -->
       <div class="grid-container">
        <div class="brand">WellHub</div>
        <div class="page-links">
@@ -22,27 +23,82 @@
          <img class="create-page-image" alt="New activities everyday, explore here. Learn more" src="images/createpage.html">
          <figcaption>Photo taken by John Arano src: unsplash.com</figcaption>
      </figure>
-      <div class="event-container">
-        <div id="submit-form">
-            <label for="name" class="event-form">Name</label>
-            <input class="event-form" type="text" id="name" name="name" placeholder="Enter your event name" required>
-            <label class="event-form" for="location">location</label>
-            <input class="event-form" type="text" id="location" name="location" placeholder="Enter your event location" required>
-            <label class="event-form" for="organiser">organiser</label>
-            <input class="event-form" type="text" id="organiser" name="organiser" placeholder="Enter organiser name" required>
-            <label for="event_type" class="event-form">event_type</label>
-            <input class="event-form" type="text" id="event_type" name="type event" placeholder="Enter your event type" required>
-            <label for="description" class="event-form">description</label>
-            <input class="event-form" type="text" id="description" name="description" placeholder="Enter your description" required>
-            <label for="datetime" class="event-form">datetime</label>
-            <input class="event-form" type="date" id="datetime" name="datetime" placeholder="Enter your datetime" required>
-            <label for="photo" class="event-form">photo</label>
-            <input class="event-form" type="file" id="photo" name="photo" placeholder="upload your photo" optional>
-            <label for="webistecode" class="event-form">webistecode</label>
-            <input class="event-form" type="text" id="webistecode" name="webistecode" placeholder="Enter your webistecode" required>
-            <input type="submit" value="Create A Event" id="submit-button" disabled>
-      </div>
-   
-   <script src="js/site_interactions.js"></script>
+   <!-- the form area -->
+      <div class="event-page-grid">
+         <div id="eventText">
+               <p>We encourage you to become an event creator because every event is an opportunity, a community's growth, and the beginning of special memories. Whether it's a social gathering, a volunteer initiative, a workshop, or any event you can imagine, your creativity can shape a more enjoyable and fulfilling world. Let's create together, let's share together</p>
+         </div>
+
+         <form id="eventForm" class="m-2" enctype="multipart/form-data">
+            <div class="form-group">
+               <label for="name" class="event-form">Name</label>
+               <input class="event-form" type="text" id="name" name="name" placeholder="Enter your event name" required>
+            </div>
+            
+            <div class="form-group">
+               <label class="event-form" for="location">location</label>
+               <input class="event-form" type="text" id="location" name="location" placeholder="Enter your event location" required>
+            </div>
+            
+            <div class="form-group">
+               <label class="event-form" for="organiser">organiser</label>
+               <input class="event-form" type="text" id="organiser" name="organiser" placeholder="Enter organiser name" required>
+            </div>
+
+            <div class="form-group">
+               <label>Event type:</label>
+               <div class="form-check">
+                  <input class="form-check-input" type="radio" name="event_type" id="workshop" value="Workshop" required>
+                  <label class="form-check-label" for="workshop">Workshop</label>
+               </div>
+               
+               <div class="form-check">
+                  <input class="form-check-input" type="radio" name="event_type" id="Seminar" value="Seminar" required>
+                  <label class="form-check-label" for="Seminar">Seminar</label>
+               </div>
+
+               <div class="form-check">
+                  <input class="form-check-input" type="radio" name="event_type" id="groupActivity" value="Group Activity" required>
+                  <label class="form-check-label" for="Group Activity">Group Activity</label>
+               </div>
+
+               <div class="form-check">
+                  <input class="form-check-input" type="radio" name="event_type" id="webinar" value="Webinar" required>
+                  <label class="form-check-label" for="webinar">Webinar</label>
+               </div>
+            
+            </div>
+
+            <div class="form-group">
+               <label for="description" class="event-form">description</label>
+               <textarea class="event-form" name="description" id="description" rows="4" required></textarea>
+            </div>
+            
+            <div class="form-group">
+               <label for="date_time" class="event-form">Date and Time:</label>
+               <input class="event-form" type="text" id="date_time" name="datetime" placeholder="e.g. 2023-05-31 14:30" required>
+            </div>
+                        
+            <div class="form-group">
+               <label for="websitecode" class="event-form">websitecode</label>
+               <input class="event-form" type="text" id="websitecode" name="websitecode" placeholder="Enter your websitecode" required>
+            </div>
+            
+            <div class="form-group">
+               <label for="photo-file-input" id="photo-file-input-label" class="p-1">Add a photo (Optional)</label>
+               <input class="event-form" type="file" id="photo-file-input" name="photo" accept="image/*" capture="camera" optional>
+               <span id="selected-file-name"></span>
+            </div>
+
+            <div>
+               <input class="btn btn-primary" type="submit" value="Submit Event">
+               <!-- value will appear on the submit button -->
+            </div>
+         </form> 
+      </div>  
+         
+
+      <!-- <script src="js/site_interactions.js"></script> -->
+      <script src="js/event_create_api.js"></script>
     </body>
    </html>
