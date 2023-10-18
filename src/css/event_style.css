@@ -1,0 +1,96 @@
+/* title session CSS */
+.title-session-grid{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 80vw;
+    margin:0 auto;
+    padding:5% 10%;
+
+}
+/* 
+#big-title, #small-title, #add-calendar-button,#hosted-by-img,#hosted-by{
+    justify-items: center;
+    align-items: center;
+} */
+/* #big-title{
+    grid-column: 1/span4;
+    grid-row: 1/span1;
+}
+#small-title{
+    grid-column: 1/span2;
+    grid-row: 2/span1;
+}
+#add-calendar-button{
+    grid-column: 3/span2;
+    grid-row: 2/span1;
+}
+#hosted-by-img{
+    
+    grid-column: 1/span1;
+    grid-row: 3/span1;
+}
+#hosted-by{
+    grid-column: 2/span 1;
+    grid-row: 3/span1;
+    text-align: center;
+} */
+#big-title {
+    grid-column: 1 / span 4; /* 从第1列开始，横跨4列 */
+    grid-row: 1 / 2;        /* 从第1行开始，跨越1行 */
+}
+
+#small-title {
+    grid-column: 1 / span 2; /* 从第1列开始，横跨2列 */
+    grid-row: 2 / 3;        /* 从第2行开始，跨越1行 */
+}
+
+#add-calendar-button {
+    grid-column: 3 / span 2; /* 从第3列开始，横跨2列 */
+    grid-row: 2 / 3;        /* 从第2行开始，跨越1行 */
+}
+
+#hosted-by-img {
+    grid-column: 1 / 2;        /* 从第1列开始，跨越1列 */
+    grid-row: 3 / 4;           /* 从第3行开始，跨越1行 */
+}
+
+#hosted-by {
+    grid-column: 2 / span 2;  /* 从第2列开始，横跨2列 */
+    grid-row: 3 / 4;        /* 从第3行开始，跨越1行 */
+    text-align: center;
+}
+
+
+/* set the font style they are genral */
+  h2 {
+    font-weight: bold;
+  }
+  
+  .event-time {
+    /* event-time-font style */
+    font-size: 1.2em;
+  }
+  /* make a round picture flame  */
+  .hosted-image {
+    width: 50px; 
+    height: 50px;
+    border-radius: 50%; 
+  }
+  
+  .add-to-calendar-button {
+    background-color: #007bff; 
+    color: #fff; 
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+.introduction-session{
+    color: white;
+    background-color: #007bff;
+    padding: 0;
+}
+
+

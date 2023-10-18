@@ -9,23 +9,25 @@
  </head>
 
  <body>
-   <!-- the navigation area -->
+      <!-- the navigation area -->
       <div class="grid-container">
        <div class="brand">WellHub</div>
        <div class="page-links">
                <a href="index.html"><button class="menu-button">Home</button></a>
-               <a href="gallery.html"><button class="menu-button">Forum</button></a>
+               <a href="forum.html"><button class="menu-button">Forum</button></a>
                <a href="about.html"><button class="menu-button">About us</button></a>
                <a href="create_event.html"><button class="menu-button">Create your events</button></a>
        </div>
       </div>
+      <!-- image area -->
       <figure>
-         <img class="create-page-image" alt="New activities everyday, explore here. Learn more" src="images/createpage.html">
+         <img class="create-page-image" alt="New activities everyday, explore here. Learn more" src="images/pic4.html">
          <figcaption>Photo taken by John Arano src: unsplash.com</figcaption>
      </figure>
    <!-- the form area -->
       <div class="event-page-grid">
          <div id="eventText">
+               <h3>Create your Event here!</h3>
                <p>We encourage you to become an event creator because every event is an opportunity, a community's growth, and the beginning of special memories. Whether it's a social gathering, a volunteer initiative, a workshop, or any event you can imagine, your creativity can shape a more enjoyable and fulfilling world. Let's create together, let's share together</p>
          </div>
 
@@ -79,10 +81,10 @@
                <input class="event-form" type="text" id="date_time" name="datetime" placeholder="e.g. 2023-05-31 14:30" required>
             </div>
                         
-            <div class="form-group">
+            <!-- <div class="form-group">
                <label for="websitecode" class="event-form">websitecode</label>
                <input class="event-form" type="text" id="websitecode" name="websitecode" placeholder="Enter your websitecode" required>
-            </div>
+            </div> -->
             
             <div class="form-group">
                <label for="photo-file-input" id="photo-file-input-label" class="p-1">Add a photo (Optional)</label>
@@ -96,7 +98,11 @@
             </div>
          </form> 
       </div>  
-         
+      
+      <!-- second part my project demonstration -->
+      <div class="grid-row" id="events-container">
+
+      </div>
 
       <!-- <script src="js/site_interactions.js"></script> -->
       <script src="js/event_create_api.js"></script>

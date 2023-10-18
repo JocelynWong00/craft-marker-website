@@ -68,13 +68,15 @@
     color: white;
     cursor: pointer;
 }
-
+*/
 .create-page-image{
     margin-top: 3rem;
-    width:100vw;
-    height: auto;
+    width:100%;
+    height: 50vh;
+    object-fit: cover;
+    border-radius: 10px;    
 
-}  */ 
+} 
 html,body{
     background-color: white !important;
 }
@@ -116,11 +118,31 @@ label{
     margin-left: 0.25rem;
 }
 #eventText{
+    margin-top: 20%;
+    height: 50%;
+    background-color: #0142f3;
+    margin-left: 15%;
+    padding: 10%;
     grid-column-start: 1;
     grid-column-end: 2;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    
+}
+#eventText:hover {
+    transform: scale(1.05); /* 鼠标悬停时放大方框 */
+    transition: transform 0.3s ease; /* 添加平滑过渡效果 */
+}
+#eventText h3{
+    color:azure;
+}
+#eventText p{
+    color:white;
 }
 #eventForm{
-    margin-right: 10%;
+    margin-right: 5%;
+    margin-bottom: 10%;
     padding: 5% 0 5% 5%;
     background-color: rgb(196, 233, 251);
     margin-left: 10%;
