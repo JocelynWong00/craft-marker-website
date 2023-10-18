@@ -29,7 +29,8 @@
 // global constant variables
 const photoFileInputLabel=document.getElementById('photo-file-input-label')
 const photoFileInput=document.getElementById('photo-file-input')
-const my_website_code="Sihan666"
+const eventsContainer=document.getElementById('events-container')
+const my_website_code="sihan666"
 // const myInput=document.querySelector("#date_time");
 // const fp=flatpickr(myInput,{
 //     enableTime:true,
@@ -56,8 +57,9 @@ const handleFormSubmit=event=>{
 
     let formData = new FormData(event.target);
     formData.append("website-code",my_website_code);
+
     const requestOptions={
-        method:postCommunityEventMethod,
+        method: postCommunityEventMethod,
         body:formData,
         redirect:'follow'
     }
@@ -80,29 +82,55 @@ const handleFormSubmit=event=>{
     });
 }
 // fetching events from community Events API
-const getCommunityEvents=()=>{
-    const queryParams={
-        website_code:my_website_code,
+const getCommunityEvents = () => {
+    const queryParams = {
+        website_code: my_website_code,
     }
-    const queryString=new URLSearchParams(queryParams).toString();
-    const urlWithParams=baseURLCommunityEvents+"?"+queryString;
-    const requestOptions={
-        method:'GET',
-        redirect:'follow'
+    const queryString = new URLSearchParams(queryParams).toString();
+    const urlWithParams = baseURLCommunityEvents + "?" + queryString;
+    const requestOptions = {
+        method: 'GET',
+        redirect: 'follow'
     }
     fetch(urlWithParams, requestOptions)
-    .then(response=>{
-        if(!response.ok){
-            throw new Error("Network response was not ok");
-        }
-        return response.json();
-    }
-    )
-    .then(data=>console.log(data));
-};
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Network response was not ok");
+            }
+            return response.json();
+        })
+        .then(events => {
+            console.log(events);
+            while (eventsContainer.firstChild) {
+                eventsContainer.removeChild(eventsContainer.firstChild);
+            }
+            events.forEach(event => {
+                const eventTemplate = `
+                <article class="col-12 col-md-12 col-1g-6">
+                    <div class="card" role="group" aria-labelledby="cards${event.id}-title" aria-describedby="cards${event.id}-desc">
+                        <h2 class="card-header p-2" id="cards${event.id}-title">${event.name}</h2>
+                        <img class="card-banner-image" src="${event.photo}" alt="${event.name}">
+                        <p class="card-body-text p-2">${event.description}</p>
+                        <p class="card-body-text px-2"><strong>Location:</strong> ${event.location}</p>
+                        <p class="card-body-text px-2"><strong>Organiser:</strong> ${event.organiser}</p>
+                        <p class="card-body-text px-2"><strong>Event Type:</strong> ${event.event_type}</p>
+                        <p class="card-body-text px-2"><strong>Date Time:</strong> ${new Date(event.date_time).toLocaleString()}</p>
+                    </div>
+                </article>`;
+                eventsContainer.innerHTML+=eventTemplate;
+                // 这里你可以使用 eventTemplate 插入到你的 DOM 中
+            });
+        })
+        .catch(error => {
+            console.error("error processing events:", error.message);
+            alert("There was a problem loading events. Please refresh the page to try again");
+        });
+}
+
 // event listeners
 photoFileInputLabel.addEventListener('click', triggerFileInput);
 photoFileInput.addEventListener('change', handleFileChange);
 eventForm.addEventListener("submit", handleFormSubmit);
 
 // page setup on first load
+getCommunityEvents();

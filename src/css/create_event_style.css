@@ -77,9 +77,9 @@
     border-radius: 10px;    
 
 } 
-html,body{
+/* html,body{
     background-color: white !important;
-}
+} */
 .event-page-grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
