@@ -191,3 +191,64 @@ label{
 #photo-file-input{
     display:none;
 }
+/* Card container */
+.card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Card header */
+.card-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    padding: 10px;
+}
+
+/* Card banner image */
+.card-banner-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Card body text */
+.card-body-text {
+    margin: 10px;
+    padding: 5px;
+}
+
+/* Additional styles for specific information (e.g., Location, Organiser, Event Type, Date Time) */
+.card-body-text strong {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+/* Media query for responsive design (adjust as needed) */
+/* @media (max-width: 768px) {
+    .card {
+        padding: 5px;
+    }
+    .card-header {
+        font-size: 20px;
+    }
+} */
+
+
+/* <article class="col-12 col-md-12 col-1g-6">
+    <div class="card" role="group" aria-labelledby="cards${event.id}-title" aria-describedby="cards${event.id}-desc">
+        <h2 class="card-header p-2" id="cards${event.id}-title">${event.name}</h2>
+        <img class="card-banner-image" src="${event.photo}" alt="${event.name}">
+        <p class="card-body-text p-2">${event.description}</p>
+        <p class="card-body-text px-2"><strong>Location:</strong> ${event.location}</p>
+        <p class="card-body-text px-2"><strong>Organiser:</strong> ${event.organiser}</p>
+        <p class="card-body-text px-2"><strong>Event Type:</strong> ${event.event_type}</p>
+        <p class="card-body-text px-2"><strong>Date Time:</strong> ${new Date(event.date_time).toLocaleString()}</p>
+    </div>
+</article> */
