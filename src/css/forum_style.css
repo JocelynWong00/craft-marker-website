@@ -1,0 +1,131 @@
+.events img {
+    border-radius: 50%;
+}
+
+.events{
+    padding:2.5%;
+}
+
+.event-page-grid{
+    margin:0 auto;
+    width: 80vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1;
+}
+
+
+label{
+    color:rgb(8, 8, 8);
+}
+
+.form-group{
+    margin-bottom: 1rem;
+}
+
+.form-group label{
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group textarea{
+    width:85%;
+    padding:0.5rem;
+    border:1px solid;
+    border-radius:4px;
+    font-size:1rem;
+}
+
+#eventText{
+    margin-top: 0;
+    height: 70%;
+    background-color: #0142f3;
+    margin-right: 5%;
+    padding: 10%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    
+}
+#eventText:hover {
+    transform: scale(1.05); /* 鼠标悬停时放大方框 */
+    transition: transform 0.3s ease; /* 添加平滑过渡效果 */
+}
+#eventText h3{
+    color:azure;
+}
+#eventText p{
+
+    color:white;
+}
+@media (max-width: 768px) {
+    /* 当屏幕宽度小于或等于768像素时，改变字体大小 */
+    #eventText p {
+        font-size: 14px; /* 较小的字体大小 */
+    }
+}
+
+@media (max-width: 480px) {
+    /* 当屏幕宽度小于或等于480像素时，再次改变字体大小 */
+    #eventText p {
+        font-size: 12px; /* 进一步减小的字体大小 */
+    }
+}
+#eventForm{
+
+    margin-bottom: 10%;
+    padding: 5% 2% 5% 5%;
+    background-color: rgb(250, 251, 251);
+    margin-left: 0;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    border-radius: 8px;
+}
+#eventForm:hover {
+    transform: scale(1.05); /* 鼠标悬停时放大方框 */
+    transition: transform 0.3s ease; /* 添加平滑过渡效果 */
+}
+.btn{
+    padding:1vh 1vw;
+    cursor:pointer;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+    font-size: 1em;
+}
+
+.btn-primary{
+    margin-top: 5%;
+    background-color: #0142f3;
+    color:white;
+}
+
+.btn-primary:hover{
+    background-color: white;
+    color: rgb(133, 24, 24);
+}
+
+#photo-file-input-label{
+    width:50%;
+    padding:1vw;
+    background-color: #0142f3;
+    color:white;
+    cursor:pointer;
+    border:grey;
+    border-style:solid;
+    border-radius:4px;
+    transition:background-color 0.2s ease;
+}
+
+#photo-file-input-label:hover{
+    background-color:rgb(225, 225, 225);
+    color:rgb(170, 29, 29);
+}
+
+#photo-file-input{
+    display:none;
+}

@@ -1,4 +1,4 @@
-// const subscribeForm=document.getElementById('submit-form');
+//const subscribeForm=document.getElementById('submit-form');
 
 // const handlerInputChange=() => {
 //     let name=document.getElementById('name');
@@ -30,13 +30,14 @@
 const photoFileInputLabel=document.getElementById('photo-file-input-label')
 const photoFileInput=document.getElementById('photo-file-input')
 const eventsContainer=document.getElementById('events-container')
-const my_website_code="sihan666"
+const my_website_code="sihan666";
+const eventForm=document.getElementById("eventForm")
 // const myInput=document.querySelector("#date_time");
 // const fp=flatpickr(myInput,{
 //     enableTime:true,
 //     dateFormat:"Y-m-d H:i",
 // })
-const baseURLCommunityEvents="https://damp-castle-86239-1b70ee228fbd.herokuapp.com/decoapi/community_events/";
+const baseURLCommunityEvents="https://damp-castle-86239-1b70ee448fbd.herokuapp.com/decoapi/community_events";
 const postCommunityEventMethod='POST';
 
 // constant functions
@@ -52,39 +53,75 @@ const handleFileChange=()=>{
 
     photoFileInputLabel.textContent=fileName;
 }
-const handleFormSubmit=event=>{
+const handleFormSubmit = event => {
     event.preventDefault();
 
     let formData = new FormData(event.target);
-    formData.append("website-code",my_website_code);
+    formData.append("website_code", my_website_code);
 
-    const requestOptions={
+    const requestOptions = {
         method: postCommunityEventMethod,
-        body:formData,
-        redirect:'follow'
+        body: formData,
+        redirect: 'follow'
     }
 
     fetch(baseURLCommunityEvents, requestOptions)
-    .then(response=>response.json().then(data=>{
-        if(!response.ok){
+    .then(response => response.json().then(data => {
+        if (!response.ok) {
             console.log("Server response:", data);
-            throw new Error("Network response was not ok")
+            throw new Error("Network response was not ok");
         }
         return data;
     }))
-    .then(data=>{
-        console.log(data);
-        alert("Event submitted successfully!")
+    .then(data => {
+        console.log(data.description);
+        photoFileInputLabel.textContent = "Add a photo (Optional)";
+        alert(`Your event "${data.description}" has been added to our website! Thanks!`);
+        eventForm.reset();
+        return data;
     })
-    .catch(error=>{
+    .then(data => {
+        getCommunityEvents();
+    })
+    .catch(error => {
         console.error("There was a problem with the fetch operation:", error.message);
-        alert("Error submitting event. Please try again");
+        alert("Error submitting event. Please try again.");
     });
-}
+};
+// const handleFormSubmit=event=>{
+//     event.preventDefault();
+
+//     let formData = new FormData(event.target);
+//     formData.append("website_code", "sihan666");
+
+//     const requestOptions={
+//         method: "POST",
+//         body:formData,
+//         redirect:'follow'
+//     }
+
+//     fetch(baseURLCommunityEvents, requestOptions)
+//     .then(response=>response.json().then(data=>{
+//         if(!response.ok){
+//             console.log("Server response:", data);
+//             throw new Error("Network response was not ok")
+//         }
+//         return data;
+//     }))
+//     .then(data=>{
+//         console.log(data);
+//         alert("Event submitted successfully!");
+//         // getCommunityEvents();
+//     })
+//     .catch(error=>{
+//         console.error("There was a problem with the fetch operation:", error.message);
+//         alert("Error submitting event. Please try again");
+//     });
+// }
 // fetching events from community Events API
 const getCommunityEvents = () => {
     const queryParams = {
-        website_code: my_website_code,
+        website_code: "sihan666",
     }
     const queryString = new URLSearchParams(queryParams).toString();
     const urlWithParams = baseURLCommunityEvents + "?" + queryString;

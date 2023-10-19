@@ -71,7 +71,7 @@
     </div>
 
     <!-- module 3  popular upcoming events-->
-    <div class="popular-upcoming-events">
+    <div id="events-container">
         <h2 id="session-title">Upcoming events for you</h2>
         <div class="events">
             <div>
@@ -140,6 +140,7 @@
         <div id="eventText">
               <h3>Create your Event here!</h3>
               <p>We encourage you to become an event creator because every event is an opportunity, a community's growth, and the beginning of special memories. Whether it's a social gathering, a volunteer initiative, a workshop, or any event you can imagine, your creativity can shape a more enjoyable and fulfilling world. Let's create together, let's share together</p>
+              <!-- how to make it responsive -->
         </div>
 
         <form id="eventForm" class="m-2" enctype="multipart/form-data">
@@ -191,11 +192,6 @@
               <label for="date_time" class="event-form">Date and Time:</label>
               <input class="event-form" type="text" id="date_time" name="datetime" placeholder="e.g. 2023-05-31 14:30" required>
            </div>
-                       
-           <!-- <div class="form-group">
-              <label for="websitecode" class="event-form">websitecode</label>
-              <input class="event-form" type="text" id="websitecode" name="websitecode" placeholder="Enter your websitecode" required>
-           </div> -->
            
            <div class="form-group">
               <label for="photo-file-input" id="photo-file-input-label" class="p-1">Add a photo (Optional)</label>
@@ -210,13 +206,12 @@
         </form> 
      </div>
 
-     <div class="grid-row" id="events-container">
+    <div id="events-container">
 
-     </div>
-    
+    </div>
 </div>
 
-<script src="js/site_interactions.js"></script>
+<!-- <script src="js/site_interactions.js"></script> -->
 <script src="js/event_create_api.js"></script>
  </body>
 </html>

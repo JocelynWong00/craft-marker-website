@@ -136,9 +136,30 @@ label{
 }
 #eventText h3{
     color:azure;
+    font-size: 1.5rem;
 }
 #eventText p{
+    font-size: 1rem;
     color:white;
+}
+
+@media (max-width: 768px) {
+    /* 当屏幕宽度小于或等于768像素时，改变字体大小 */
+    #eventText p {
+        font-size: 14px; /* 较小的字体大小 */
+    }
+
+}
+
+@media (max-width: 480px) {
+    /* 当屏幕宽度小于或等于480像素时，再次改变字体大小 */
+    #eventText p {
+        font-size: 12px; /* 进一步减小的字体大小 */
+    }
+    #eventText{
+        height:auto;
+    }
+
 }
 #eventForm{
     margin-right: 5%;

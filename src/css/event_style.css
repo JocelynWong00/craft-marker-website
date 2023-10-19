@@ -9,33 +9,7 @@
     padding:5% 10%;
 
 }
-/* 
-#big-title, #small-title, #add-calendar-button,#hosted-by-img,#hosted-by{
-    justify-items: center;
-    align-items: center;
-} */
-/* #big-title{
-    grid-column: 1/span4;
-    grid-row: 1/span1;
-}
-#small-title{
-    grid-column: 1/span2;
-    grid-row: 2/span1;
-}
-#add-calendar-button{
-    grid-column: 3/span2;
-    grid-row: 2/span1;
-}
-#hosted-by-img{
-    
-    grid-column: 1/span1;
-    grid-row: 3/span1;
-}
-#hosted-by{
-    grid-column: 2/span 1;
-    grid-row: 3/span1;
-    text-align: center;
-} */
+
 #big-title {
     grid-column: 1 / span 4; /* 从第1列开始，横跨4列 */
     grid-row: 1 / 2;        /* 从第1行开始，跨越1行 */

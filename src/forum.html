@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Wellhub</title>
     <link rel="stylesheet" href="css/general_styles.css">
+    <link rel="stylesheet" href="css/forum_style.css">
 
  </head>
 
@@ -24,12 +25,49 @@
     <h2 id="session-title">Wellness Community</h2>
     <div class="events">
         <div>
-            <img src="images/dog.html" alt="some dogs sitting together">
+            <img src="images/pic1.html" alt="some dogs sitting together">
         </div>
         <div>
-            <h3>Petting dogs</h3>
-            
-            <p>Come and join us to pet cute dogs! It's a simple and joyful activity...</p>
+            <h3>Effective Tips for Weight Loss</h3>
+            <p>User: FitAndFabulous</p>
+            <p>Posting Time: 2023-08-19 16:23</p>
+            <p> I've been on a journey to shed some extra pounds and I'm looking for some effective weight loss tips. Could anyone here share their personal strategies or advice that worked for them?</p>
+        </div>
+    </div>
+
+    <div class="events">
+        <div>
+            <img src="images/pic2.html" alt="some dogs sitting together">
+        </div>
+        <div>
+            <h3>Choosing the Right Running Shoes</h3>
+            <p>User: RunningNewbie123</p>
+            <p>Posting Time: 2023-09-02 19:34</p>
+            <p>content:  everyone, I'm a newbie to running and I've been a bit confused when it comes to selecting the right pair of running shoes. Experienced runners, could you please share your insights on how to choose the perfect running shoes for different needs?</p>
+        </div>
+    </div>
+
+    <div class="events">
+        <div>
+            <img src="images/pic3.html" alt="some dogs sitting together">
+        </div>
+        <div>
+            <h3>Benefits of High-Intensity Interval Training (HIIT)</h3>
+            <p>User: HIITEnthusiast</p>
+            <p>Posting Time: 2023-10-19 10:34</p>
+            <p>Content: HIIT workouts have gained a lot of popularity lately. I'm curious to know more about the benefits and personal experiences with HIIT. Have you tried it, and if so, how did it impact your fitness journey?</p>
+        </div>
+    </div>
+
+    <div class="events">
+        <div>
+            <img src="images/pic4.html" alt="some dogs sitting together">
+        </div>
+        <div>
+            <h3>Nutrition and Muscle Building</h3>
+            <p>User: MuscleChef</p>
+            <p>Posting Time: 2023-10-19 10:34</p>
+            <p>Content: Nutrition plays a crucial role in muscle building. What are your favorite muscle-building meals or dietary tips? Let's share our knowledge on how to optimize nutrition for building a stronger physique.</p>
         </div>
     </div>
 
@@ -38,63 +76,51 @@
             <img src="images/dog.html" alt="some dogs sitting together">
         </div>
         <div>
-            <h3>Petting dogs events group chat</h3>
-            
-            <p>Anyone who is interested in petting evnets can join our whatsapp link</p>
+            <h3>Effective Tips for Weight Loss</h3>
+            <p>User: FitAndFabulous</p>
+            <p>Posting Time: 2023-10-19 10:34</p>
+            <p>Content: I've been on a journey to shed some extra pounds and I'm looking for some effective weight loss tips. Could anyone here share their personal strategies or advice that worked for them?</p>
         </div>
-    </div>
-
-    <div class="events">
-        <div>
-            <img src="images/dog.html" alt="some dogs sitting together">
-        </div>
-        <div>
-            <h3>Petting dogs</h3>
-            
-            <p>Come and join us to pet cute dogs! It's a simple and joyful activity...</p>
-        </div>
-    </div>
-
-    <div class="events">
-        <div>
-            <img src="images/dog.html" alt="some dogs sitting together">
-        </div>
-        <div>
-            <h3>Petting dogs</h3>
-            
-            <p>Come and join us to pet cute dogs! It's a simple and joyful activity...</p>
-        </div>
-    </div>
-
-    <div class="events">
-        <div>
-            <img src="images/dog.html" alt="some dogs sitting together">
-        </div>
-        <div>
-            <h3>Petting dogs</h3>
-            
-            <p>Come and join us to pet cute dogs! It's a simple and joyful activity...</p>
         </div>
     </div>
 </div>
 <!-- a area that you can send your post -->
 <div id="send-posts">
-    <form id="forum-post-form">
-        <h5>Write your post here</h5>
-        <label for="firstname" >First Name</label>
-        <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
-
-        <label for="suburb" >Suburb</label>
-        <input type="text" id="suburb" name="suburb" placeholder="Enter your suburb" required>
-
-        <label for="email" >Email:</label>
-        <input type="email" id="email" name="email" placeholder="Enter your emial address" required>
-
-        <input type="submit" id="subsribe-submit-button" value="Subscribe" >
-        <div id="subscribe-image">
-            <img src="images/weather.png" style="object-fit:cover" alt="a woman doing yoga">
+    <!-- module4 create your event -->
+       <!-- the form area -->
+       <div class="event-page-grid">
+        <div id="eventText">
+              <h3>Create your post here!</h3>
+              <p>Your voices matter! We encourage each and every one of you to share your thoughts, experiences, and questions on our forum. Whether you have a fitness success story to inspire others, a question about nutrition, or a workout tip that's changed your life, your contributions enrich our community. Don't hesitate to start a conversation, ask for advice, or simply say hello. Your insights make this forum a valuable resource for all of us.
+                Let's build a supportive and informative community together. Your posts are the foundation of our discussions, so go ahead and share your wisdom with the world. We're eager to hear from you!
+                </p>
+              <!-- how to make it responsive -->
         </div>
-    </form>
+
+        <form id="eventForm" class="m-2" enctype="multipart/form-data">
+           <div class="form-group">
+              <label for="title" class="event-form">Title</label>
+              <input class="event-form" type="text" id="title" name="name" placeholder="Enter your poster title" required>
+           </div>
+
+           <div class="form-group">
+              <label for="content" class="event-form">Content</label>
+              <textarea class="event-form" name="content" id="content" rows="15" required></textarea>
+           </div>
+           
+           <div class="form-group">
+              <label for="photo-file-input" id="photo-file-input-label" class="p-1">Add a photo (Optional)</label>
+              <input class="event-form" type="file" id="photo-file-input" name="photo" accept="image/*" capture="camera" optional>
+              <span id="selected-file-name"></span>
+           </div>
+
+           <div>
+              <input class="btn btn-primary" type="submit" value="Post">
+              <!-- value will appear on the submit button -->
+           </div>
+
+        </form> 
+     </div>
 
     <div id="responseMessage"></div>
 

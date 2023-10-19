@@ -63,14 +63,20 @@ const renderEvents=(eventsToRender)=>{
     events.forEach(event => {
         const eventTemplate = `
         <article class="col-12 col-md-12 col-1g-6">
-            <div class="card" role="group" aria-labelledby="cards${event.id}-title" aria-describedby="cards${event.id}-desc">
-                <h2 class="card-header p-2" id="cards${event.id}-title">${event.name}</h2>
-                <img class="card-banner-image" src="${event.photo}" alt="${event.name}">
-                <p class="card-body-text p-2">${event.description}</p>
-                <p class="card-body-text px-2"><strong>Location:</strong> ${event.location}</p>
-                <p class="card-body-text px-2"><strong>Organiser:</strong> ${event.organiser}</p>
-                <p class="card-body-text px-2"><strong>Event Type:</strong> ${event.event_type}</p>
-                <p class="card-body-text px-2"><strong>Date Time:</strong> ${new Date(event.date_time).toLocaleString()}</p>
+            <div class="events" aria-labelledby="cards${event.id}-title" aria-describedby="cards${event.id}-desc">
+                <div>
+                <img src="${event.photo}" alt="${event.name}">
+                </div>
+
+                <div>
+                <h2>${event.name}</h2>
+                <p >${event.description}</p>
+                <p><strong>Location:</strong> ${event.location}</p>
+                <p><strong>Organiser:</strong> ${event.organiser}</p>
+                <p><strong>Event Type:</strong> ${event.event_type}</p>
+                <p><strong>Date Time:</strong> ${new Date(event.date_time).toLocaleString()}</p>
+
+                </div>
             </div>
         </article>`;
         eventsContainer.innerHTML+=eventTemplate;
@@ -114,10 +120,7 @@ const getCommunityEvents = () => {
             //         </div>
             //     </article>`;
             //     eventsContainer.innerHTML+=eventTemplate;
-            //     // 这里你可以使用 eventTemplate 插入到你的 DOM 中
-            // });
             events_list=events; 
-            // why we don't use events directly?????
             renderEvents(events_list);
         })
         .catch(error => {
