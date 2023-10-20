@@ -10,8 +10,9 @@
     margin:0 auto;
     width: 80vw;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1;
+    gap:5%;
 }
 
 
@@ -44,8 +45,8 @@ label{
     background-color: #0142f3;
     margin-right: 5%;
     padding: 10%;
-    grid-column-start: 1;
-    grid-column-end: 2;
+    /* grid-column-start: 1;
+    grid-column-end: 2; */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     font-size: 16px;
@@ -59,13 +60,21 @@ label{
     color:azure;
 }
 #eventText p{
-
     color:white;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
+    #eventText {
+        font-size: 14px; /* 在小屏幕上减小字体大小 */
+        height: 80%;
+    }
+}
+@media (max-width: 900px) {
     /* 当屏幕宽度小于或等于768像素时，改变字体大小 */
     #eventText p {
         font-size: 14px; /* 较小的字体大小 */
+    }
+    #eventText {
+        height:80%;
     }
 }
 
@@ -74,6 +83,9 @@ label{
     #eventText p {
         font-size: 12px; /* 进一步减小的字体大小 */
     }
+    #eventText {
+        height: 60%;
+    }
 }
 #eventForm{
 
@@ -81,8 +93,8 @@ label{
     padding: 5% 2% 5% 5%;
     background-color: rgb(250, 251, 251);
     margin-left: 0;
-    grid-column-start: 2;
-    grid-column-end: 4;
+    /* grid-column-start: 2;
+    grid-column-end: 4; */
     border-radius: 8px;
 }
 #eventForm:hover {
