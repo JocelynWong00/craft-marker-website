@@ -67,3 +67,27 @@ form{
 #select-submit-button{
     margin-top: 3%;
 }
+
+
+
+.form-group> label{
+    font-size: 1.5rem;
+}
+
+/* 在选择框 (select) 的样式上增加大小 */
+.filter-input {
+    width: 60%; /* 增加选择框的宽度 */
+    font-size: 18px; /* 增加字体大小 */
+    padding: 10px; /* 增加内边距 */
+}
+@media screen and (max-width: 600px) {
+    .filter-input {
+        width: 100%;
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .form-group> label {
+        font-size: 16px; /* 调整filter-label的字体大小 */
+    }
+}

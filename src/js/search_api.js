@@ -1,6 +1,6 @@
 // global constant variables
-const photoFileInputLabel=document.getElementById('photo-file-input-label')
-const photoFileInput=document.getElementById('photo-file-input')
+// const photoFileInputLabel=document.getElementById('photo-file-input-label')
+// const photoFileInput=document.getElementById('photo-file-input')
 const eventsContainer=document.getElementById('events-container')
 const my_website_code="sihan666"
 // const myInput=document.querySelector("#date_time");
@@ -9,52 +9,54 @@ const my_website_code="sihan666"
 //     dateFormat:"Y-m-d H:i",
 // })
 const baseURLCommunityEvents="https://damp-castle-86239-1b70ee228fbd.herokuapp.com/decoapi/community_events/";
-const postCommunityEventMethod='POST';
+// const postCommunityEventMethod='POST';
 const filterDropdown=document.getElementById("sport-type") 
+let events_list = []
+
 // filterDropdown=sport-type
 
 // constant functions
-const triggerFileInput=() =>{
-    photoFileInput.click();
-}
-const handleFileChange=()=>{
-    let fileName= photoFileInput.files[0].name;
+// const triggerFileInput=() =>{
+//     photoFileInput.click();
+// }
+// const handleFileChange=()=>{
+//     let fileName= photoFileInput.files[0].name;
 
-    if(fileName.length>20){
-        fileName=fileName.substring(0,17)+'...'
-    }
+//     if(fileName.length>20){
+//         fileName=fileName.substring(0,17)+'...'
+//     }
 
-    photoFileInputLabel.textContent=fileName;
-}
-const handleFormSubmit=event=>{
-    event.preventDefault();
+//     photoFileInputLabel.textContent=fileName;
+// }
+// const handleFormSubmit=event=>{
+//     event.preventDefault();
 
-    let formData = new FormData(event.target);
-    formData.append("website-code",my_website_code);
+//     let formData = new FormData(event.target);
+//     formData.append("website-code",my_website_code);
 
-    const requestOptions={
-        method: postCommunityEventMethod,
-        body:formData,
-        redirect:'follow'
-    }
+//     const requestOptions={
+//         method: postCommunityEventMethod,
+//         body:formData,
+//         redirect:'follow'
+//     }
 
-    fetch(baseURLCommunityEvents, requestOptions)
-    .then(response=>response.json().then(data=>{
-        if(!response.ok){
-            console.log("Server response:", data);
-            throw new Error("Network response was not ok")
-        }
-        return data;
-    }))
-    .then(data=>{
-        console.log(data);
-        alert("Event submitted successfully!")
-    })
-    .catch(error=>{
-        console.error("There was a problem with the fetch operation:", error.message);
-        alert("Error submitting event. Please try again");
-    });
-}
+//     fetch(baseURLCommunityEvents, requestOptions)
+//     .then(response=>response.json().then(data=>{
+//         if(!response.ok){
+//             console.log("Server response:", data);
+//             throw new Error("Network response was not ok")
+//         }
+//         return data;
+//     }))
+//     .then(data=>{
+//         console.log(data);
+//         alert("Event submitted successfully!")
+//     })
+//     .catch(error=>{
+//         console.error("There was a problem with the fetch operation:", error.message);
+//         alert("Error submitting event. Please try again");
+//     });
+// }
 // render events after fetch or filter
 const renderEvents=(eventsToRender)=>{
     while (eventsContainer.firstChild) {
@@ -138,16 +140,15 @@ const filterEventsByTerm=(term)=>{
     }
 
     // filter events by the term and then render them
-
     const filteredEvents=events_list.filter(event=>event.name.includes(term));
     renderEvents(filteredEvents);
 
 }
 
 // event listeners
-photoFileInputLabel.addEventListener('click', triggerFileInput);
-photoFileInput.addEventListener('change', handleFileChange);
-eventForm.addEventListener("submit", handleFormSubmit);
+// photoFileInputLabel.addEventListener('click', triggerFileInput);
+// photoFileInput.addEventListener('change', handleFileChange);
+// eventForm.addEventListener("submit", handleFormSubmit);
 filterDropdown.addEventListener('change',(e)=>{
     const selectedTerm=e.target.value;
     filterEventsByTerm(selectedTerm);
