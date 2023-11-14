@@ -1,42 +1,10 @@
-//const subscribeForm=document.getElementById('submit-form');
 
-// const handlerInputChange=() => {
-//     let name=document.getElementById('name');
-//     let location=document.getElementById('location');
-//     let organiser=document.getElementById('organiser');
-//     let event_type=document.getElementById('event_type');
-//     let description=document.getElementById('description');
-//     let date_time=document.getElementById('date_time');
-//     let photo=document.getElementById('photo');
-//     let website_code=document.getElementById('website_code');
-//     let button=document.getElementById('submit-button')
-
-//     if (name.value && location.value && organiser.value && event_type.value &&
-//         description.value && date_time.value && photo.value && website_code.value)
-//     {
-//         button.classList.add('enabled');
-//         button.disabled=false;
-//     }
-//     else{
-//         button.classList.remove('enabled');
-//         button.disabled=true;
-//     }
-    
-// }
-
-// subscribeForm.addEventListener('input', handlerInputChange)
-
-// global constant variables
 const photoFileInputLabel=document.getElementById('photo-file-input-label')
 const photoFileInput=document.getElementById('photo-file-input')
 const eventsContainer=document.getElementById('events-container')
 const my_website_code="sihan666";
 const eventForm=document.getElementById("eventForm")
-// const myInput=document.querySelector("#date_time");
-// const fp=flatpickr(myInput,{
-//     enableTime:true,
-//     dateFormat:"Y-m-d H:i",
-// })
+
 const baseURLCommunityEvents="https://damp-castle-86239-1b70ee448fbd.herokuapp.com/decoapi/community_events";
 const postCommunityEventMethod='POST';
 
@@ -88,37 +56,7 @@ const handleFormSubmit = event => {
         alert("Error submitting event. Please try again.");
     });
 };
-// const handleFormSubmit=event=>{
-//     event.preventDefault();
 
-//     let formData = new FormData(event.target);
-//     formData.append("website_code", "sihan666");
-
-//     const requestOptions={
-//         method: "POST",
-//         body:formData,
-//         redirect:'follow'
-//     }
-
-//     fetch(baseURLCommunityEvents, requestOptions)
-//     .then(response=>response.json().then(data=>{
-//         if(!response.ok){
-//             console.log("Server response:", data);
-//             throw new Error("Network response was not ok")
-//         }
-//         return data;
-//     }))
-//     .then(data=>{
-//         console.log(data);
-//         alert("Event submitted successfully!");
-//         // getCommunityEvents();
-//     })
-//     .catch(error=>{
-//         console.error("There was a problem with the fetch operation:", error.message);
-//         alert("Error submitting event. Please try again");
-//     });
-// }
-// fetching events from community Events API
 const getCommunityEvents = () => {
     const queryParams = {
         website_code: "sihan666",
@@ -160,7 +98,6 @@ const getCommunityEvents = () => {
             </div>
         </article>`;
                 eventsContainer.innerHTML+=eventTemplate;
-                // 这里你可以使用 eventTemplate 插入到你的 DOM 中
             });
         })
         .catch(error => {

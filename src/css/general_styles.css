@@ -34,20 +34,15 @@ grid-template-rows: auto;
     grid-column: 3 / span 2;
     grid-row: 1;
     text-align: right;
-    background-color: #0142f3; /* new line – just copy and paste this line */
+    background-color: #0142f3; 
     padding: 10px;
     }
 
-/* .title-bg {
-    background-color: yellow;
-    position: absolute;
-    
-}  */
+
 .welcome-band{
-    /* margin:0 10% auto 10%; */
+    
     background-color:white;
     text-align: center;
-    /*textalign和整体的这个element */
 }
 .welcome-band>h1{
     padding-top: 3%;
@@ -57,10 +52,7 @@ grid-template-rows: auto;
     padding-bottom: 2%;
 }
 
-.main{
-    /* width:75vw; */
-    /* margin:0 auto; */
-}
+
 .menu-button { font-size: 20px;
     color: white; background-color: #0142f3; padding: 2px 20px; border-style: solid; border-radius: 5px; border-color: white;
     }
@@ -78,12 +70,10 @@ figcaption{
     color: grey;
     font-weight: 100;;
 }
-/* 添加搜索板块，点进去图片可以跳转到搜索页面 */
-
 
 img {
-    max-width: 100%; /* 图片不超出容器宽度 */
-    height: auto; /* 高度自动调整以保持纵横比 */
+    max-width: 100%; 
+    height: auto; 
 }
 
 #create-page-pic{
@@ -107,7 +97,7 @@ img {
     grid-column-end: 2;
     grid-row:1;
     text-align: left;
-    /* 这里用span还是column start? */
+    
 }
 
 #main-page-text2{
@@ -118,19 +108,19 @@ img {
     padding-right: 5%;
 
     text-align: left;
-    /* 这里用span还是column start? */
+    
 }
 @media (max-width: 768px) {
-    /* 当屏幕宽度小于或等于768像素时，改变字体大小 */
+    
     #main-page-text2 p {
-        font-size: 14px; /* 较小的字体大小 */
+        font-size: 14px; 
     }
 }
 
 @media (max-width: 480px) {
-    /* 当屏幕宽度小于或等于480像素时，再次改变字体大小 */
+    
     #main-page-text2 p {
-        font-size: 12px; /* 进一步减小的字体大小 */
+        font-size: 12px; 
     }
 }
 
@@ -167,7 +157,7 @@ img {
     padding-left: 10%;
     text-align: center;
     background-color: white;
-    /* display: block; */
+    
     align-items: center;
     margin: 3% 10% 3% 10%;
     padding: 5px;
@@ -220,22 +210,22 @@ img {
 
 
 footer {
-    background-color: #0142f3; /* 深蓝色背景 */
-    color: #ffffff; /* 白色文字 */
-    padding: 20px; /* 适当的内边距 */
+    background-color: #0142f3; 
+    color: #ffffff; 
+    padding: 20px;
     padding-left: 10%;
-    text-align: center; /* 文本居中对齐 */
+    text-align: center; 
   }
   footer p{
     color: white;
   }
-  /* 链接样式 */
+
   footer a {
-    color: #ffffff; /* 白色文字 */
-    text-decoration: none; /* 去除下划线 */
+    color: #ffffff; 
+    text-decoration: none; 
   }
   
-  /* 链接悬停样式 */
+
   footer a:hover {
-    text-decoration: underline; /* 鼠标悬停时显示下划线 */
+    text-decoration: underline; 
   }

@@ -11,32 +11,32 @@
 }
 
 .big-title {
-    grid-column: 1 / span 2; /* 从第1列开始，横跨4列 */
-    grid-row: 1 / 2;        /* 从第1行开始，跨越1行 */
+    grid-column: 1 / span 2; 
+    grid-row: 1 / 2;        
 }
 
 .small-title {
-    grid-column: 1 / span 1; /* 从第1列开始，横跨2列 */
-    grid-row: 2 / 3;        /* 从第2行开始，跨越1行 */
+    grid-column: 1 / span 1; 
+    grid-row: 2 / 3;        
 }
 
 .add-calendar-button {
-    grid-column: 1 / span 1; /* 从第3列开始，横跨2列 */
-    grid-row: 3 / 4;        /* 从第2行开始，跨越1行 */
+    grid-column: 1 / span 1; 
+    grid-row: 3 / 4;        
 }
 
 .hosted-by-img {
-    grid-column: 1 / 2;        /* 从第1列开始，跨越1列 */
-    grid-row: 4 / 5;           /* 从第3行开始，跨越1行 */
+    grid-column: 1 / 2;        
+    grid-row: 4 / 5;           
 }
 
 .hosted-by {
-    grid-column: 1 / span 2;  /* 从第2列开始，横跨2列 */
-    grid-row: 5 / 6;        /* 从第3行开始，跨越1行 */
+    grid-column: 1 / span 2; 
+    grid-row: 5 / 6;        
 
 }
 .decoration-pic{
-    grid-column: 3 / span 2;  /* 从第2列开始，横跨2列 */
+    grid-column: 3 / span 2;  
     grid-row: 1 / span 5; 
 }
 .dec-pic{
@@ -49,26 +49,25 @@
     margin:auto;
 }
 .description{
-    grid-column: 1 / span 2;  /* 从第2列开始，横跨2列 */
+    grid-column: 1 / span 2;  
     grid-row: 4 / 5; 
 }
 #description-text{
-    grid-column: 1 / span 2;  /* 从第2列开始，横跨2列 */
+    grid-column: 1 / span 2;  
     grid-row: 5 / 6; 
     padding-right:20%;
 }
 
 
-/* set the font style they are genral */
   h2 {
     font-weight: bold;
   }
   
   .event-time {
-    /* event-time-font style */
     font-size: 1.2em;
   }
-  /* make a round picture flame  */
+
+
   .hosted-image {
     margin-left: 30px;
     margin-bottom: 20px;
@@ -80,10 +79,10 @@
   .add-to-calendar-button {
     background-color: #007bff; 
     color: #fff; 
-    padding: 15px 30px; /* 调整内边距，使按钮更大 */
+    padding: 15px 30px; 
     border: none;
     cursor: pointer;
-    font-size: 18px; /* 调整字体大小 */
+    font-size: 18px;
     margin: 40px auto 40px 0;
   }
 
@@ -93,7 +92,7 @@
     padding: 15px;
     border: none;
     cursor: pointer;
-    font-size: 18px; /* 调整字体大小 */
+    font-size: 18px; 
     
   }
 

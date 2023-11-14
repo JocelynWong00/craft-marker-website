@@ -53,8 +53,8 @@ label{
     
 }
 #eventText:hover {
-    transform: scale(1.05); /* 鼠标悬停时放大方框 */
-    transition: transform 0.3s ease; /* 添加平滑过渡效果 */
+    transform: scale(1.05);
+    transition: transform 0.3s ease; 
 }
 #eventText h3{
     color:azure;
@@ -64,14 +64,13 @@ label{
 }
 @media (max-width: 1200px) {
     #eventText {
-        font-size: 14px; /* 在小屏幕上减小字体大小 */
+        font-size: 14px; 
         height: 80%;
     }
 }
 @media (max-width: 900px) {
-    /* 当屏幕宽度小于或等于768像素时，改变字体大小 */
     #eventText p {
-        font-size: 14px; /* 较小的字体大小 */
+        font-size: 14px; 
     }
     #eventText {
         height:80%;
@@ -79,9 +78,8 @@ label{
 }
 
 @media (max-width: 480px) {
-    /* 当屏幕宽度小于或等于480像素时，再次改变字体大小 */
     #eventText p {
-        font-size: 12px; /* 进一步减小的字体大小 */
+        font-size: 12px; 
     }
     #eventText {
         height: 60%;
@@ -93,13 +91,11 @@ label{
     padding: 5% 2% 5% 5%;
     background-color: rgb(250, 251, 251);
     margin-left: 0;
-    /* grid-column-start: 2;
-    grid-column-end: 4; */
     border-radius: 8px;
 }
 #eventForm:hover {
-    transform: scale(1.05); /* 鼠标悬停时放大方框 */
-    transition: transform 0.3s ease; /* 添加平滑过渡效果 */
+    transform: scale(1.05); 
+    transition: transform 0.3s ease; 
 }
 .btn{
     padding:1vh 1vw;
