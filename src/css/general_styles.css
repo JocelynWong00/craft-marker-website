@@ -217,3 +217,25 @@ img {
     font-size: 1.5rem; 
     margin-left: 10%;
 }
+
+
+footer {
+    background-color: #0142f3; /* 深蓝色背景 */
+    color: #ffffff; /* 白色文字 */
+    padding: 20px; /* 适当的内边距 */
+    padding-left: 10%;
+    text-align: center; /* 文本居中对齐 */
+  }
+  footer p{
+    color: white;
+  }
+  /* 链接样式 */
+  footer a {
+    color: #ffffff; /* 白色文字 */
+    text-decoration: none; /* 去除下划线 */
+  }
+  
+  /* 链接悬停样式 */
+  footer a:hover {
+    text-decoration: underline; /* 鼠标悬停时显示下划线 */
+  }

@@ -6,7 +6,7 @@
     <title>Wellhub</title>
     <link rel="stylesheet" href="css/general_styles.css">
     <link rel="stylesheet" href="css/create_event_style.css">
-    
+    <link rel="stylesheet" href="css/cards_style.css">
  </head>
 
  <body>
@@ -73,69 +73,17 @@
     <!-- module 3  popular upcoming events-->
     <div id="events-container">
         <h2 id="session-title">Upcoming events for you</h2>
-        <div class="events">
-            <div>
-                <img src="images/dog.html" alt="some dogs sitting together">
-            </div>
-            <div>
-                <h3>Petting dogs</h3>
-                
-                <p>Come and join us to pet cute dogs! It's a simple and joyful activity...</p>
-            </div>
-        </div>
-
-        <div class="events">
-            <div>
-                <img src="images/dog.html" alt="some dogs sitting together">
-            </div>
-            <div>
-                <h3>Petting dogs</h3>
-                
-                <p>Come and join us to pet cute dogs! It's a simple and joyful activity...</p>
-            </div>
-        </div>
-
-        <div class="events">
-            <div>
-                <img src="images/dog.html" alt="some dogs sitting together">
-            </div>
-            <div>
-                <h3>Petting dogs</h3>
-                
-                <p>Come and join us to pet cute dogs! It's a simple and joyful activity...</p>
-            </div>
-        </div>
-
-        <div class="events">
-            <div>
-                <img src="images/dog.html" alt="some dogs sitting together">
-            </div>
-            <div>
-                <h3>Petting dogs</h3>
-                
-                <p>Come and join us to pet cute dogs! It's a simple and joyful activity...</p>
-            </div>
-        </div>
-
-        <div class="events">
-            <div>
-                <img src="images/dog.html" alt="some dogs sitting together">
-            </div>
-            <div>
-                <h3>Petting dogs</h3>
-                
-                <p>Come and join us to pet cute dogs! It's a simple and joyful activity...</p>
-            </div>
-        </div>
     </div>
 
-    <figure>
-        <img class="create-page-image" alt="New activities everyday, explore here. Learn more" src="images/pic4.html">
-        <figcaption>Photo taken by John Arano src: unsplash.com</figcaption>
-    </figure>
+    
 
     <!-- module4 create your event -->
        <!-- the form area -->
+       <figure>
+        <img class="create-page-image" alt="New activities everyday, explore here. Learn more" src="images/pic4.html">
+        <figcaption>Photo taken by John Arano src: unsplash.com</figcaption>
+        </figure>
+
        <div class="event-page-grid">
         <div id="eventText">
               <h3>Create your Event here!</h3>
@@ -163,7 +111,7 @@
               <label>Event type:</label>
               <div class="form-check">
                  <input class="form-check-input" type="radio" name="event_type" id="workshop" value="Workshop" required>
-                 <label class="form-check-label" for="workshop">Workshop</label>
+                 <label class="form-check-label" for="Workshop">Workshop</label>
               </div>
               
               <div class="form-check">
@@ -177,8 +125,8 @@
               </div>
 
               <div class="form-check">
-                 <input class="form-check-input" type="radio" name="event_type" id="webinar" value="Webinar" required>
-                 <label class="form-check-label" for="webinar">Webinar</label>
+                 <input class="form-check-input" type="radio" name="event_type" id="Webinar" value="Webinar" required>
+                 <label class="form-check-label" for="Webinar">Webinar</label>
               </div>
            
            </div>
@@ -190,7 +138,7 @@
            
            <div class="form-group">
               <label for="date_time" class="event-form">Date and Time:</label>
-              <input class="event-form" type="text" id="date_time" name="datetime" placeholder="e.g. 2023-05-31 14:30" required>
+              <input class="event-form" type="text" id="date_time" name="date_time" placeholder="e.g. 2023-05-31 14:30" required>
            </div>
            
            <div class="form-group">
@@ -211,7 +159,16 @@
     </div>
 </div>
 
+<footer>
+   <div class="footer-style">
+   <p>WellHub</p>
+   <p>contact: 61 2323 4245</p>
+   <p>Address: 30 Kenthouse Wizard 4056, Brisbane, Australia</p>
+   <p>Location: Brisbane, Australia</p>
+   <p>Email: <a href="mailto:wellhub@gmail.com">wellhub@gmail.com</a></p>
+   </div>
+</footer>
 <!-- <script src="js/site_interactions.js"></script> -->
-<script src="js/event_create_api.js"></script>
+<script src="js/event_create_and_get (Peter's version).js"></script>
  </body>
 </html>

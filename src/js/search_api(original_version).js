@@ -62,7 +62,7 @@ const renderEvents=(eventsToRender)=>{
     while (eventsContainer.firstChild) {
         eventsContainer.removeChild(eventsContainer.firstChild);
     }
-    events.forEach(event => {
+    eventsToRender.forEach(event => {
         const eventTemplate = `
         <article class="col-12 col-md-12 col-1g-6">
             <div class="events" aria-labelledby="cards${event.id}-title" aria-describedby="cards${event.id}-desc">

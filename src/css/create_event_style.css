@@ -212,44 +212,7 @@ label{
 #photo-file-input{
     display:none;
 }
-/* Card container */
-.card {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-    padding: 10px;
-    text-align: center;
-}
 
-/* Card header */
-.card-header {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 0;
-    padding: 10px;
-}
-
-/* Card banner image */
-.card-banner-image {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    height: auto;
-}
-
-/* Card body text */
-.card-body-text {
-    margin: 10px;
-    padding: 5px;
-}
-
-/* Additional styles for specific information (e.g., Location, Organiser, Event Type, Date Time) */
-.card-body-text strong {
-    font-weight: bold;
-    margin-right: 5px;
-}
 
 /* Media query for responsive design (adjust as needed) */
 /* @media (max-width: 768px) {

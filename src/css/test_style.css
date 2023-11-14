@@ -1,0 +1,37 @@
+.centered-content>img{
+    
+    object-fit: cover;
+    width:30vw;
+    border-radius: 50%;
+}
+
+
+
+.centered-content{
+    text-align: center;
+    color: white;
+    /* center everything inside the container by using the text-align property */
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "manrope", sans-serif;
+    background-color: black;
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1194px){
+    .centered-content>img{
+        width: 15vw;
+    }
+}
+
+@media only screen and (min-width:1195px){
+    .centered-content>img{
+    
+        width: 10vw;
+    }
+}

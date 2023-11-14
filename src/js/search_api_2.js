@@ -1,6 +1,6 @@
 const eventsContainer=document.getElementById('events-container')
 const my_website_code="sihan666"
-const baseURLCommunityEvents="https://damp-castle-86239-1b70ee448fbd.herokuapp.com/decoapi/community_events";
+const baseURLCommunityEvents="https://damp-castle-86239-1b70ee448fbd.herokuapp.com/decoapi/community_events/";
 const filterDropdown=document.getElementById("sport-type") 
 let events_list = []
 
@@ -8,14 +8,13 @@ const renderEvents=(eventsToRender)=>{
     while (eventsContainer.firstChild) {
         eventsContainer.removeChild(eventsContainer.firstChild);
     }
-    events.forEach(event => {
+    eventsToRender.forEach(event => {
         const eventTemplate = `
         <article class="col-12 col-md-12 col-1g-6">
             <div class="events" aria-labelledby="cards${event.id}-title" aria-describedby="cards${event.id}-desc">
                 <div>
                 <img src="${event.photo}" alt="${event.name}">
                 </div>
-
                 <div>
                 <h2>${event.name}</h2>
                 <p >${event.description}</p>
@@ -60,6 +59,7 @@ const getCommunityEvents = () => {
 }
 // filtering functionally
 const filterEventsByTerm=(term)=>{
+    console.log(term);
 
     //if no term selected, show all events
     if(!term){
