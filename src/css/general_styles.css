@@ -110,19 +110,6 @@ img {
     text-align: left;
     
 }
-@media (max-width: 768px) {
-    
-    #main-page-text2 p {
-        font-size: 14px; 
-    }
-}
-
-@media (max-width: 480px) {
-    
-    #main-page-text2 p {
-        font-size: 12px; 
-    }
-}
 
 .main-page-button{
     width: 70%;

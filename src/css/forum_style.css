@@ -62,29 +62,7 @@ label{
 #eventText p{
     color:white;
 }
-@media (max-width: 1200px) {
-    #eventText {
-        font-size: 14px; 
-        height: 80%;
-    }
-}
-@media (max-width: 900px) {
-    #eventText p {
-        font-size: 14px; 
-    }
-    #eventText {
-        height:80%;
-    }
-}
 
-@media (max-width: 480px) {
-    #eventText p {
-        font-size: 12px; 
-    }
-    #eventText {
-        height: 60%;
-    }
-}
 #eventForm{
 
     margin-bottom: 10%;

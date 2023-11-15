@@ -10,7 +10,7 @@
 
 }
 
-.big-title {
+.title {
     grid-column: 1 / span 2; 
     grid-row: 1 / 2;        
 }
@@ -20,7 +20,7 @@
     grid-row: 2 / 3;        
 }
 
-.add-calendar-button {
+.calendar{
     grid-column: 1 / span 1; 
     grid-row: 3 / 4;        
 }
@@ -76,11 +76,10 @@
     border-radius: 50%; 
   }
   
-  .add-to-calendar-button {
+  .calendar-button {
     background-color: #007bff; 
     color: #fff; 
     padding: 15px 30px; 
-    border: none;
     cursor: pointer;
     font-size: 18px;
     margin: 40px auto 40px 0;
@@ -90,7 +89,6 @@
     background-color: #007bff; 
     color: #fff; 
     padding: 15px;
-    border: none;
     cursor: pointer;
     font-size: 18px; 
     

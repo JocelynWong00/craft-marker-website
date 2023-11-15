@@ -14,7 +14,7 @@
  <div class="grid-container">
     <div class="brand">WellHub</div>
 
-    <div class="page-links">
+    <div class="page-links" role="navigation">
             <a href="index.html" class="hover-underline"><button class="menu-button">Home</button></a>
             <a href="forum.html" class="hover-underline"><button class="menu-button">Forum</button></a>
             <a href="about.html" class="hover-underline"><button class="menu-button">About us</button></a>
@@ -31,7 +31,7 @@
     <p id="your-discount-code">Click the button avove to reveal your discount code</p> -->
 </div>
 
-<div class="main">
+<div class="main" role="main">
     <div class="welcome-band">
         <h1>Welcome to Wellhub</h1>
         <p>Are you ready to embark on a journey towards a healthier, happier you? Look no further! Wellhub is your ultimate destination for all things related to human wellness right in your local community.</p>
@@ -160,6 +160,23 @@
 
 <footer>
    <div class="footer-style">
+      <p>Translate this page in your preferred language:</p>
+      <div id="google_translate_element"></div>
+      
+      <script type="text/javascript">
+          function googleTranslateElementInit() {
+              new google.translate.TranslateElement(
+                  {pageLanguage: 'en'},
+                  'google_translate_element'
+              );
+          }
+      </script>
+      
+      <script type="text/javascript"
+          src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+      </script>
+      
+      <p>You can translate the content of this page by selecting a language in the select box.</p>
    <p>WellHub</p>
    <p>contact: 61 2323 4245</p>
    <p>Address: 30 Kenthouse Wizard 4056, Brisbane, Australia</p>

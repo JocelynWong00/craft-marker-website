@@ -1,7 +1,7 @@
 const eventsContainer=document.getElementById('events-container')
 const my_website_code="sihan666"
 const baseURLCommunityEvents="https://damp-castle-86239-1b70ee448fbd.herokuapp.com/decoapi/community_events/";
-const filterDropdown=document.getElementById("sport-type") 
+const filterDropdown=document.getElementById("sport") 
 let events_list = []
 
 const renderEvents=(eventsToRender)=>{

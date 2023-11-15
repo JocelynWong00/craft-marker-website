@@ -46,6 +46,7 @@ label{
     display:inline !important;
     margin-left: 0.25rem;
 }
+
 #eventText{
     margin-top: 20%;
     height: 50%;
@@ -59,10 +60,7 @@ label{
     font-size: 16px;
     
 }
-#eventText:hover {
-    transform: scale(1.05); 
-    transition: transform 0.3s ease; 
-}
+
 #eventText h3{
     color:azure;
     font-size: 1.5rem;
@@ -72,24 +70,6 @@ label{
     color:white;
 }
 
-@media (max-width: 768px) {
-
-    #eventText p {
-        font-size: 14px;
-    }
-
-}
-
-@media (max-width: 480px) {
-    
-    #eventText p {
-        font-size: 12px; 
-    }
-    #eventText{
-        height:auto;
-    }
-
-}
 #eventForm{
     margin-right: 5%;
     margin-bottom: 10%;

@@ -63,17 +63,8 @@
 #subscribe-form> input{
     width: 75%;
     padding: 10px;
-    /* margin: 5px 0; */
     border: 1px solid #ccc;
     border-radius: 5px;
-
-    /* display: block;
-    width:80%;
-    margin-bottom: 1rem;
-    padding: .75rem .75rem;
-    font-size: 0.8rem;
-    line-height: 1.5;
-    color: #495057; */
 }
 
 #subsribe-form > input[type="email"]:valid{
